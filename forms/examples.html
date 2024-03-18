@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script defer src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="my-5">Forms</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Inputs</h3>
+
+                <form action="">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email aadress</label> 
+                        <input type="email" id="email" class="form-control" aria-describedby="emailHelp" />
+
+                        <div id="emailHelp" class="form-text">
+                            We'll never share your email with anyone else :3
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="pass" class="form-label">Password</label>
+                        <input type="password" id="pass" class="form-control" aria-describedby="passHelp"/>
+
+                        <div class="form-text" id="passHelp">
+                            We <i>will</i> share this with everyone
+                        </div>
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="check1">
+                        <label for="check1" class="form-check-label">Check me out</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+            </div>
+
+            <div class="col-md-6">
+                <h3>Radio Buttons</h3>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="flexcheckdef">
+                    <label for="flexcheckdef" class="form-check-label">chexquest</label>
+                </div>
+
+                <div class="form-check">
+                    <input checked type="checkbox" class="form-check-input" id="check2">
+                    <label for="check2">Check 2</label>
+                </div>
+
+                <div class="form-check">
+                    <input checked type="checkbox" class="form-check-input" id="check3">
+                    <label for="check3">Check 3</label>
+                </div>
+                
+                <div class="form-check">
+                    <input type="radio" name="radals" class="form-check-input" id="check4">
+                    <label for="check4">Default Radio check</label>
+                </div>
+                
+                <div class="form-check">
+                    <input checked type="radio" name="radals" class="form-check-input" id="check5">
+                    <label for="check5">Checked Radio check</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" name="radals" class="form-check-input" id="check6" checked disabled>
+                    <label for="check6">Default disabled checked Radio check</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" name="radals" class="form-check-input" id="check7" checked>
+                    <label for="check7">Default disabled checked Radio check</label>
+                </div>
+
+                <div class="form-check form-switch">
+                    <input type="checkbox" name="radals" class="form-check-input" id="check8" checked>
+                    <label for="check8">Switch</label>
+                </div>
+
+                <div class="form-check form-switch">
+                    <input type="checkbox" name="radals" class="form-check-input" id="check9" disabled>
+                    <label for="check9">Disabled Switch</label>
+                </div>
+                
+                <div class="form-check form-switch">
+                    <input type="checkbox" name="radals" class="form-check-input" id="check10" disabled checked>
+                    <label for="check10">Checked Disabled Switch</label>
+                </div>
+
+                <div class="form-check-inline">
+                    <input type="checkbox" name="radals" class="form-check-input" id="check11" value="option1">
+                    <label for="check11">Check inline 1</label>
+                </div>
+                <div class="form-check-inline">
+                    <input type="checkbox" name="radals" class="form-check-input" id="check12" value="option2" checked>
+                    <label for="check12">Check inline 2</label>
+                </div>
+                <div class="form-check-inline">
+                    <input type="checkbox" name="radals" class="form-check-input" id="check13" value="option3" disabled>
+                    <label for="check13">Check inline 3</label>
+                </div>
+
+                <div class="form-check-inline">
+                    <input type="radio" name="radals2" class="form-check-input" id="check14" value="option1">
+                    <label for="check14">Radio Inline 1</label>
+                </div>
+                <div class="form-check-inline">
+                    <input type="radio" name="radals2" class="form-check-input" id="check15" value="option2" checked>
+                    <label for="check15">Radio Inline 2</label>
+                </div>
+                <div class="form-check-inline">
+                    <input type="radio" name="radals2" class="form-check-input" id="check16" value="option3" disabled>
+                    <label for="check16">Radio Inline 3</label>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="my-5">Files</h3>
+
+                <div class="form-file">
+                    <input type="file" class="form-file-input" id="file1" />
+                    <label for="file1">
+                        <span class="form-file-text">Chooe file...</span>
+                        <span class="form-file-button">Browse</span>
+                    </label>
+                </div>
+
+                <h3 class="my-5">Range</h3>
+                <label for="range1" class="form-label">Example range</label>
+                <input type="range" class="form-range" id="range1">
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="my-5">Validation</h3>
+
+                <form action="" class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                        <label for="valid1" class="form-label">First name</label>
+                        <input type="text" id="valid1" class="form-control" value="Mark" required>
+                        <div class="valid-feedback">Looks good</div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <label for="valid2" class="form-label">Last name</label>
+                        <input type="text" id="valid2" class="form-control" value="John" required>
+                        <div class="valid-feedback">Looks good</div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="valid3" class="form-label">Username</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="prepend1">@</span>
+                            <input type="text" id="valid3" class="form-control" aria-describedby="prepend1" required>
+                            <div class="invalid-feedback">
+                                Please choose a username
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="valid4" class="form-label">city</label>
+                        <input type="text" class="form-control" id="valid4" aria-describedby="prepend1" required> 
+                        <div class="invalid-feedback">Please provide a valid city.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="valid5" class="form-label">State</label>
+                        <input type="text" class="form-control" id="valid5" aria-describedby="prepend1" required> 
+                        <div class="invalid-feedback">Please provide a valid state.</div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
